@@ -1,0 +1,64 @@
+<!-- *------------------------------------- -->
+<!--* HTML FORM TAG  - ATTRIBUTES
+<!-- *---------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    html {
+      font-family: "jost", sans-serif;
+      background-color: #efefef;
+    }
+    h1 {
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <form action="#">
+      <label for="email">Enter Your Email: </label>
+      <input
+        type="email"
+        name="userEmail"
+        placeholder="Enter your email"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        required
+        autocomplete="off"
+        size="30"
+        value="user@example.com"
+      />
+      <br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW Q:  HTML FORM ELEMENTS 
+<!-- *---------------------------------------- -->
+
+<!--? 1: Difference between ID vs Class attribute?  -->
+<!-- Multiple elements in HTML can have the same class value, whereas a value of id
+attribute must be unique. -->
+
+<!--? 2: Difference between Div vs Span Tag?  -->
+<!-- <div></div>
+Element: Stands for "division." 1: Block-level element: It creates a block-level
+container that typically represents a section or division of content. 2:Creates
+a new line before and after itself by default.
+
+<span></span>
+Element: Inline-level element: It doesn't create a new line; it's used for
+applying styles to specific parts of text within a larger block of content.
+Doesn't create any visual change by default; it's used for applying CSS styles
+or scripting. -->
+
+<div>
+  <h1>Welcome to <span style="color: red"> Our Website </span></h1>
+  <p>This is a description of our services.</p>
+</div>

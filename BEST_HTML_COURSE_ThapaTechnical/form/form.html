@@ -1,0 +1,173 @@
+<!-- *------------------------------------- -->
+<!--* HTML FORM TAG  
+<!-- *---------------------------------------- -->
+
+<!--? The <form> tag is used to create an HTML form for user input. -->
+
+<!--? The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML FORM</h1>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <label for="email">Enter your email</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="textarea">Message</label>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+      </div>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html> -->
+
+<!-- *------------------------------------- -->
+<!--* HTML Types of inputs in HTML Form
+<!-- *---------------------------------------- -->
+<!--
+ 1: Text Input (<input type="text" />): Allows users to enter a single line of text. 
+
+ 2: Password Input (<input type="password" />): Hides the entered text for
+secure password entry. 
+
+3: Email Input (<input type="email" />): Validates and
+formats input as an email address. 
+
+4:Number Input (<input type="number" />):
+Accepts numeric input and provides increment/decrement controls. 
+
+5:Radio Buttons (<input type="radio" />): Allows users to choose a single option from a group of
+options. 
+
+6: Checkboxes (<input type="checkbox" />): Allows users to select
+multiple options. 
+
+7: Dropdowns (<select> and <option>): Provides a list of options for users to choose from.
+  
+8: <datalist> Provide a predefined list of options for autocomplete suggestions.
+
+9: Textarea (<textarea>): Allows users to enter multiple lines of text.
+
+10:File Upload (<input type="file">):  Lets users choose and upload files from their device.
+
+11: Submit Button (<input type="submit">):  Submits the form data to the server. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+    html {
+      font-family: "jost", sans-serif;
+      background-color: #efefef;
+    }
+    h1 {
+      font-weight: bold;
+    }
+
+    .sameclass {
+      background-color: red;
+    }
+  </style>
+  <body>
+    <h1>HTML FORM</h1>
+    <!-- Add Form Here -->
+    <form>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="sameclass"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div>
+        <label for="number">max subject</label>
+        <input
+          type="number"
+          class="sameclass"
+          id="number"
+          max="5"
+          min="1"
+          value="1"
+        />
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      </div>
+
+      <div>
+        <label for="hobbies"> Fav Hobbies: </label>
+        <input type="checkbox" name="interest" value="music" /> Music
+        <input type="checkbox" name="interest" value="sports" /> Sports
+      </div>
+
+      <div>
+        <label for="country">Fav Country: </label>
+        <select name="country" id="country">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="country">Select a Country:</label>
+        <input type="text" id="country" name="country" list="countries" />
+        <datalist id="countries">
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="comment"> Message Us: </label>
+        <textarea
+          name="comments"
+          rows="10"
+          cols="100"
+          placeholder="Enter your comments"
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="file">Select File</label>
+        <input type="file" name="fileUpload" />
+      </div>
+
+      <input type="submit" value="Submit" />
+      <!-- or -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

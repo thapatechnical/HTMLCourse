@@ -1,0 +1,141 @@
+<!-- *------------------------------------- -->
+<!--*  HTML TABLE TAG  
+<!-- *---------------------------------------- -->
+<!--? The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html tables</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+      }
+
+      table {
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+      tr,
+      td,
+      th {
+        border: 3px solid #000;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>html table Tag</h1>
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>username</th>
+          <th>password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>vinod</td>
+          <td>thapa</td>
+        </tr>
+        <tr>
+          <td>thapa</td>
+          <td>123</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">count:2</td>
+        </tr>
+      </tfoot>
+    </table> -->
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7">timetable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6">hours</td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>thr</td>
+          <td>Fri</td>
+          <td>Sat</td>
+        </tr>
+        <tr>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+        </tr>
+        <tr>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+        </tr>
+        <tr>
+          <td colspan="6">Lunch</td>
+        </tr>
+        <tr>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td rowspan="2">Games</td>
+        </tr>
+        <tr>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+          <td>math</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+<!-- *------------------------------------- -->
+<!--*  LIST OF DEPRECATED TAGS - HTML TABLES
+<!-- *---------------------------------------- -->
+
+<!-- 
+  <table align="...">: Used to horizontally align the table within its containing element.
+  <tr align="...">: Used to horizontally align the content of a table row.
+  <td align="...">: Used to horizontally align the content of a table cell.
+  <th align="...">: Used to horizontally align the content of a table header cell.
+  <bgcolor="...">: Used to set the background color of a table, row, or cell.
+  <border="...">: Used to define the border width of a table.
+  <frame="...">: Used to specify whether a table should have outer frames.
+  <rules="...">: Used to define the presence and types of horizontal and vertical rules within a table.
+  <width="...">: Used to set the width of a table, row, or cell. 
+  cellspacing & cellpadding for the cell padding and outer spacing
+
+  -->
+
+<!-- *------------------------------------- -->
+<!--*  INTERVIEW Q: HTML TABLES
+<!-- *---------------------------------------- -->
+<!--? 1: What is the purpose of the <thead>, <tbody>, and <tfoot> elements within a table? -->
+<!--? 2: How can you create table headers using the <th> element? How is it different from using <td> for data cells? -->
+<!--? 3: What is the significance of the colspan and rowspan attributes in table cells? Provide an example. -->
+
+<!-- SHARING IS CARING 💖 https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse -->

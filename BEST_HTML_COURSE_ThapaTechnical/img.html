@@ -1,0 +1,114 @@
+<!-- *------------------------------------- -->
+<!--* HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html images</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        font-weight: bold;
+        background-color: #efefef;
+        /* color: #fff; */
+      }
+      img {
+        /* max-width: 250px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML IMG TAG</h1>
+    <a href="https://thapatechnical.shop/source-code" target="_blank">
+      <img
+        src="./images/html.png"
+        alt="my html course thumbnail"
+        width="250"
+        height="150"
+        title="html course banner"
+        loading="lazy"
+      />
+    </a>
+
+    <img
+      src="./images/html.png"
+      alt="Clickable World Map"
+      usemap="#map"
+      width="250"
+      height="150"
+    />
+
+    <map name="map">
+      <area
+        shape="rect"
+        coords="150,30,200,80"
+        target="_blank"
+        href="https://youtu.be/5p8e2ZkbOFU"
+        alt="my youtube channel link"
+      />
+      <!-- <area
+    shape="circle"
+    coords="200,150,50"
+    href="https://youtu.be/5p8e2ZkbOFU"
+    alt="Central Area"
+  />
+  <area
+    shape="poly"
+    coords="300,100,350,200,250,200"
+    href="https://youtu.be/5p8e2ZkbOFU"
+    alt="South Area"
+  /> -->
+    </map>
+  </body>
+</html>
+
+<!--TODO  Deprecated attributes of HTML Images  -->
+<!-- align, border, hspace, vspace -->
+
+<!--* What Not To Do  -->
+<!-- ❌ <img alt="image" src="penguin.jpg" /> ✅<img
+  alt="A Rockhopper Penguin standing on a beach."
+  src="penguin.jpg"
+/> -->
+
+<!-- *------------------------------------- -->
+<!--* INTERVIEW QUESTIONS: HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+
+<!--? 1: How would you make an image responsive using the width attribute? -->
+<!-- You can set the width attribute to a percentage value (e.g., width="100%") to make the image adjust its width based on the available space. -->
+
+<!--? 2: How do you create an image link using the <img> tag? -->
+<!-- You wrap the <img> tag with an anchor <a> tag and provide the href attribute in the <a> tag. -->
+
+<!--? 3: What's the difference between relative and absolute URLs in the href attribute? -->
+<!-- Relative URLs are URLs that are relative to the current page's URL. Absolute
+URLs are complete URLs, including the protocol (http/https) and domain. -->
+
+<!--? 4: Why is providing descriptive alt text for images important? It improves -->
+<!-- accessibility for users with visual impairments and helps search engines 
+understand image content.
+
+<!-- *------------------------------------- -->
+<!--* ADVANCED : HTML IMAGE TAG  
+<!-- *---------------------------------------- -->
+<!-- <img
+  src="images/html.png"
+  alt="Responsive Image"
+  srcset="
+    images/html-400.jpg   400w,
+    images/html-600.jpg   600w,
+    images/html-800.jpg   800w,
+    images/html-1000.jpg 1000w
+  "
+  sizes="(max-width: 600px) 400px,
+            (max-width: 800px) 600px,
+            (max-width: 1100px) 1000px,
+            1200px"
+/> -->

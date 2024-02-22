@@ -1,0 +1,43 @@
+<!-- *------------------------------------- -->
+<!--*  HTML PICTURE TAG  
+<!-- *---------------------------------------- -->
+
+<!--? The <picture> element in HTML is used to provide multiple sources of an image, allowing the   browser to choose the most appropriate source based on the user's device,   screen size, and other factors. This is particularly useful for responsive  design and ensuring the best quality images are displayed. </picture> -->
+
+<!-- SHARING IS CARING 💖  https://pixelied.com/, https://squoosh.app/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        font-weight: bold;
+        text-align: center;
+        background-color: #efefef;
+        /* color: #fff; */
+      }
+      img {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML PICTURE TAG</h1>
+    <picture>
+      <source srcset="./images/html.webp" type="image/webp" />
+      <source srcset="./images/html.jpg" type="image/jpg" />
+      <source srcset="./images/html.jpeg" type="image/jpeg" />
+      <source srcset="./images/html.svg" type="image/svg" />
+      <img
+        src="./images/html.png"
+        alt="best html course by thapa techncial"
+        width="500"
+      />
+    </picture>
+  </body>
+</html>

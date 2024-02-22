@@ -1,0 +1,110 @@
+<!-- *------------------------------------- -->
+<!--* HTML FORM TAG  - MORE ON INPUT TYPES
+<!-- *---------------------------------------- -->
+
+<!-- 1: Range Input (<input type="range">): Allows users to select a value from a specified range using a slider. 
+2: Date Input (<input type="date">): Provides a date picker for selecting dates.
+3: Time Input (<input type="time">): Allows users to input a specific time.
+4: Color Input (<input type="color">): Presents a color picker for selecting colors.
+5: URL Input (<input type="url">): Validates and formats input as a URL.
+6: Search Input (<input type="search">): Provides a search input field with a clear button.
+7: Month Input (<input type="month">): Allows users to select a month and year.
+8: Week Input (<input type="week">): Allows users to select a specific week and year.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div>
+        <label for="range">Range: </label>
+        <input type="range" name="volume" min="0" max="100" value="80" />
+      </div>
+      <br />
+      <div>
+        <label for="birthdate">birthdate: </label>
+        <input type="date" name="birthdate" />
+      </div>
+
+      <br />
+      <div>
+        <label for="appointmentTime">appointmentTime: </label>
+        <input type="time" name="appointmentTime" />
+      </div>
+
+      <br />
+      <div>
+        <label for="favoriteColor">favoriteColor: </label>
+        <input type="color" name="favoriteColor" />
+      </div>
+
+      <br />
+      <div>
+        <label for="website">website: </label>
+        <input type="url" name="website" placeholder="Enter website URL" />
+      </div>
+
+      <br />
+      <div>
+        <label for="searchQuery">searchQuery: </label>
+        <input type="search" name="searchQuery" placeholder="Search..." />
+      </div>
+
+      <br />
+      <div>
+        <label for="expiryDate">Month & Year: </label>
+        <input type="month" name="expiryDate" />
+      </div>
+
+      <br />
+      <div>
+        <label for="week">vacationWeek: </label>
+        <input type="week" name="vacationWeek" />
+      </div>
+    </form>
+    <br />
+
+    <!-- Semantic HTML5 Form Elements:
+Semantic HTML5 form elements like <label>, <fieldset>, and <legend> provide better structure and accessibility to forms.
+
+<label>: Associates text labels with form elements for better user understanding.
+<fieldset>: Groups related form elements together, creating a visual and semantic grouping.
+<legend>: Provides a caption or title for the <fieldset> element. -->
+
+    <form action="/submit" method="post">
+      <!-- add <fieldset> </fieldset> -->
+      <fieldset>
+        <legend>Contact Info</legend>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+        </div>
+        <div>
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="textarea">Message</label>
+          <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
